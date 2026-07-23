@@ -1,6 +1,6 @@
 """
 Class Participation as a Site of Structural Exclusion
-IDT: Inclusivity — Group Project, IIM Calcutta
+IDT: Inclusivity — Group Project, IIM Calcutta (Group 16, Section D)
 Survey dashboard (N = 49). Aggregate, anonymised, self-report data.
 """
 
