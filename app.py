@@ -1,6 +1,6 @@
 """
 Class Participation as a Site of Structural Exclusion
-IDT: Inclusivity — Group Project, IIM Calcutta (Group 16, Section D)
+IDT: Inclusivity — Group Project, IIM Calcutta
 Survey dashboard (N = 49). Aggregate, anonymised, self-report data.
 """
 
@@ -157,7 +157,7 @@ def likert_fig(key, labels=("1", "2", "3", "4", "5"), highlight_high=True):
 # ----------------------------------------------------------------------
 # MASTHEAD
 # ----------------------------------------------------------------------
-st.markdown('<div class="kicker">IDT · Inclusivity — IIM Calcutta</div>', unsafe_allow_html=True)
+st.markdown('<div class="kicker">IDT · Inclusivity — IIM Calcutta (Group 16, Section D) </div>', unsafe_allow_html=True)
 st.markdown(
     '<div class="masthead"><h1>Class Participation as a Site of Structural Exclusion</h1>'
     '<div class="sub">A section survey on who the graded classroom rewards — and who it quietly costs. '
