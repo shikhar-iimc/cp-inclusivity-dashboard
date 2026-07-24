@@ -1,5 +1,5 @@
 # Class Participation as a Site of Structural Exclusion — Survey Dashboard
-IDT: Inclusivity group project · Group 16, Section D · IIM Calcutta
+IDT: Inclusivity group project · Group 16, Section D
 
 Interactive dashboard of anonymous survey findings (N = 50) on how graded
 Class Participation is experienced.
