@@ -41,7 +41,7 @@ DEMO_MEDIUM = {"Primarily English": 42, "Mixed": 5, "Primarily a regional langua
 DEMO_EXP = {"Fresher (0-1 yr)": 29, "1-3 years": 17, "3-6 years": 4}
 TONE = [("Critical / wants reform", 7, RED), ("Neutral", 1, BAR_SOFT), ("Satisfied", 1, GREEN)]
 N_OPEN = 9
-GFORM_RESPONSES_LINK = "[INSERT_GOOGLE_FORM_RESPONSES_LINK]"
+GFORM_RESPONSES_LINK = "https://docs.google.com/spreadsheets/d/1PMZ5TC4Je7RWiY5N-maGhFJpCK_tQr67icSDGp1DNZk/edit?usp=sharing"
 
 # ---- css --------------------------------------------------------------
 st.markdown(f"""
@@ -262,7 +262,7 @@ st.markdown(
 st.write("")
 st.markdown(f'<div class="foot">Full anonymous survey responses: '
             f'<a href="{GFORM_RESPONSES_LINK}" target="_blank">Google Form response sheet</a> '
-            f'(link to be added).</div>', unsafe_allow_html=True)
+            f'().</div>', unsafe_allow_html=True)
 st.markdown('<div class="foot" style="margin-top:10px;color:#6E6E6E">IDT: Inclusivity group project · Group 16, Section D · '
             'IIM Calcutta. Full diagnosis and the proposed intervention are set out in the accompanying report and policy memo.</div>',
             unsafe_allow_html=True)
