@@ -46,15 +46,18 @@ GFORM_RESPONSES_LINK = "[INSERT_GOOGLE_FORM_RESPONSES_LINK]"
 # ---- css --------------------------------------------------------------
 st.markdown(f"""
 <style>
-  .stApp {{ background:{BG}; }}
-  html, body, [class*="css"] {{ color:{INK}; }}
-  .block-container {{ max-width:1060px; padding-top:2.2rem; padding-bottom:3.5rem; }}
+  /* force light rendering even if the viewer's browser/OS is in dark mode */
+  .stApp {{ background:{BG} !important; }}
+  [data-testid="stAppViewContainer"], [data-testid="stHeader"], .main, section.main {{ background:{BG} !important; }}
+  html, body, [class*="css"] {{ color:{INK} !important; background:{BG} !important; }}
+  [data-testid="stMarkdownContainer"], [data-testid="stMarkdownContainer"] * {{ color:{INK}; }}
+  .block-container {{ max-width:1060px; padding-top:2.2rem; padding-bottom:3.5rem; background:{BG} !important; }}
   h1,h2,h3,h4 {{ font-family:Georgia,'Times New Roman',serif !important; color:{INK} !important; font-weight:normal; }}
   p,li,div,span,label,td,th {{ font-family:Georgia,'Times New Roman',serif; color:{INK}; }}
   .title {{ font-size:2.0rem; line-height:1.15; margin:0 0 6px 0; }}
   .dek {{ color:{SOFT}; font-size:1.02rem; font-style:italic; margin-bottom:4px; }}
   .meta {{ color:{FAINT}; font-size:.8rem; font-family:Helvetica,Arial,sans-serif; letter-spacing:.4px; }}
-  .rule {{ border:0; border-top:1px solid {INK}; margin:14px 0 24px 0; }}
+  .rule {{ border:0; border-top:1px solid {INK}; margin:12px 0 14px 0; }}
   .lead {{ font-size:1.05rem; color:{INK}; line-height:1.55; }}
   .lead .r {{ color:{RED}; font-weight:bold; }}
   .lead .g {{ color:{GREEN}; font-weight:bold; }}
@@ -96,7 +99,8 @@ def layout(h=250):
     return dict(template="simple_white", height=h, paper_bgcolor=BG, plot_bgcolor=BG,
                 font=dict(family="Georgia, serif", color=INK, size=13),
                 margin=dict(l=8, r=8, t=10, b=10), showlegend=False,
-                hoverlabel=dict(bgcolor="#fff", font_size=12, bordercolor=INK))
+                hoverlabel=dict(bgcolor=INK, font=dict(color="#FFFFFF", size=12,
+                                family="Helvetica, Arial, sans-serif"), bordercolor=INK))
 
 def likert(col, labels, emph_low=False):
     """Mostly neutral bars; a single accent colour marks the meaningful tail."""
